@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="10dp"
+    tools:context="com.dacodes.bepensa.fragments.CardFragment"
+    android:paddingBottom="8dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="@color/colorOrange"
+        android:text="Mientras más puntos obtengas podrás disfrutar de mejores premios"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:background="@drawable/card_background"
+        android:layout_below="@+id/textView"
+        android:id="@+id/card_background_iv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/logo_motriz_iv"
+        android:layout_width="180dp"
+        android:layout_below="@+id/textView"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"/>
+
+
+<RelativeLayout
+    android:id="@+id/total_rel"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorOrange"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/puntos_tv"
+        android:text="Total 0 Puntos"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/profile_iv"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="0dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:text="Nancy"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@+id/profile_image"
+        android:id="@+id/name_card_tv"
+        android:layout_above="@+id/total_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

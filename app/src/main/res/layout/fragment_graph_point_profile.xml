@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_graph"
+    android:background="@color/colorOrange"
+    android:animateLayoutChanges="true"
+    tools:context=".fragments.GraphPointProfile">
+
+
+    <View
+        android:id="@+id/view_reference"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/point_oportinities_tv"
+        android:layout_above="@+id/rela_point"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/rela_point"
+        android:layout_alignEnd="@id/rela_point"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="10 \n puntos" />
+
+    <TextView
+        android:layout_above="@+id/rela_test"
+        android:id="@+id/point_test_tv"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/rela_test"
+        android:layout_alignEnd="@+id/rela_test"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 \npuntos" />
+
+        <TextView
+            android:id="@+id/encuesta_tv"
+            android:text="Encuestas"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/view_reference"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1.7dp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/oportunidades_tv"
+        android:text="Oportunidades"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/view_reference"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1.7dp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rela_test"
+        android:layout_toLeftOf="@+id/view_reference"
+        android:layout_marginBottom="1.7dp"
+        android:background="@color/colorLavenderBlush"
+        android:layout_above="@+id/encuesta_tv"
+        android:layout_width="75dp"
+        android:layout_height="220px">
+
+
+        <TextView
+            android:id="@+id/text2_test_tv"
+            android:text="Encuestas"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.dacodes.bepensa.utils.VerticalTextView
+            android:layout_width="wrap_content"
+            android:text="Encuestas"
+            android:textSize="16sp"
+            android:id="@+id/text_test_tv"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rela_point"
+    android:layout_marginLeft="10dp"
+    android:layout_toRightOf="@+id/view_reference"
+    android:layout_above="@+id/oportunidades_tv"
+    android:layout_width="100dp"
+    android:layout_marginBottom="1.7dp"
+    android:background="@color/colorLavenderBlush"
+    android:layout_height="220dp">
+
+    <TextView
+        android:id="@+id/text2_point_tv"
+        android:text="Oportunidades"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.dacodes.bepensa.utils.VerticalTextView
+        android:text="Oportunidades"
+        android:id="@+id/text_point_tv"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+    <ProgressBar
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateTint="@color/colorRowStick"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

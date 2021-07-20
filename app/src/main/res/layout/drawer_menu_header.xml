@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:background="@color/colorOrange"
+    android:layout_gravity="center_vertical|start">
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical|start"
+        android:layout_width="81dp"
+        android:layout_height="81dp">
+
+        <ProgressBar
+            android:id="@id/progressBar"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="14sp"
+            android:text="Kevin Carrillo"
+            android:textColor="@color/colorWhite"
+            android:maxLines="1"
+            />
+
+
+        <TextView
+            android:id="@+id/id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="14sp"
+            android:text="ID:123456"
+            android:textColor="@color/colorWhite"
+            android:maxLines="1"
+            />
+
+
+        <TextView
+            android:id="@+id/points_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="14sp"
+            android:text="729 Puntos"
+            android:textColor="@color/colorWhite"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/points_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="14sp"
+            android:text="729 Puntos"
+            android:textColor="@color/colorWhite"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

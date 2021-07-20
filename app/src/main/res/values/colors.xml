@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F37733</color>
+    <color name="colorPrimaryDark">#F37733</color>
+    <color name="colorAccent">#F37733</color>
+    <color name="colorOrange">#f37733</color>
+    <color name="colorOrgangeTransparent">#64F37733</color>
+    <color name="colorGrayText">#95979A</color>
+    <color name="colorGrayTab">#F5F7F9</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTranslucentBlack">#CC000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGray">#D8D8D8</color>
+    <color name="colorLoaderBackground">#80FFFFFF</color>
+    <color name="colorLightSalmon">#FFA07A</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="colorCoral">#FF7F50</color>
+    <color name="colorRowStick">#FDECE3</color>
+    <color name="colorPeachPuff">#FFDAB9</color>
+    <color name="colorLavenderBlush">#FFF0F5</color>
+    <color name="colorOpportunity">#d9d9d9</color>
+    <color name="colorBlue">#118DD5</color>
+
+</resources>

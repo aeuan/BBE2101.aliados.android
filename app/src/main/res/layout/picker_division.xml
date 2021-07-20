@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_divisions"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Desliza para seleccionar tu división:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <NumberPicker
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/text_divisions"
+            android:id="@+id/pickerDialog"
+            style="@style/string_picker"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+        </NumberPicker>
+
+        <Button
+            android:layout_below="@id/pickerDialog"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorOrange"
+            android:text="Aceptar"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

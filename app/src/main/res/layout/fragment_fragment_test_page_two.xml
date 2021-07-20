@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragments.FragmentTestPageTwo">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_test"
+                            android:layout_marginTop="20dp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorGrayText"
+                            android:layout_margin="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/text_default"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/tv_test"
+                            android:layout_width="wrap_content"
+                            android:layout_alignLeft="@+id/text_et"
+                            android:layout_height="wrap_content"
+                            android:text="Maximo 255 caracteres" />
+
+                        <EditText
+                            android:id="@+id/text_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_below="@+id/text_default"
+                            android:background="@drawable/borde_test"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:maxLength="255" />
+
+
+                        <Button
+                            android:id="@+id/btn_send"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp"
+                            android:background="@color/colorOrange"
+                            android:text="Siguente"
+                            android:textAllCaps="false" />
+                </RelativeLayout>
+        </LinearLayout>
+</ScrollView>

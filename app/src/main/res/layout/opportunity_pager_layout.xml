@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/banner_iv"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        />
+
+<!--    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp">
+
+        <com.klinker.android.simple_videoview.SimpleVideoView
+            android:id="@+id/simple_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            app:loop="true"
+            app:stopSystemAudio="true"
+            app:muted="false"
+            app:showSpinner="true"/>
+
+
+        <ImageButton
+            android:id="@+id/play_bt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/play_button"
+            android:layout_centerInParent="true"
+            android:background="@color/colorTransparent"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

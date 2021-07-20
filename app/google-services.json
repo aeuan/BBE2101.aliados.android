@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "365251506822",
+    "firebase_url": "https://bepensa-219616.firebaseio.com",
+    "project_id": "bepensa-219616",
+    "storage_bucket": "bepensa-219616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365251506822:android:65408234626f3d70",
+        "android_client_info": {
+          "package_name": "com.dacodes.bepensa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365251506822-ms11cb02f4pmg21f0fp0mmllvmo6noku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvI3TleqV6WX4OACv2uuB_t2PktGg0Mxc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

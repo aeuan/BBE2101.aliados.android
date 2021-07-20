@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/colorWhite"
+    >
+
+    <Button
+        android:id="@+id/next_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:text="Siguiente"
+        android:minHeight="0dp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/next_bt"
+        android:layout_alignParentTop="true"
+        >
+
+        <EditText
+            android:id="@+id/clave_empleado_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Clave de colaborador"
+            />
+
+
+        <EditText
+            android:id="@+id/division_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="Elige una división"
+            android:textColor="@color/colorGrayText"
+            android:textColorHint="@color/colorGrayText"
+            android:inputType="none"/>
+
+
+        <EditText
+            android:id="@+id/clave_seguridad_social_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Clave de seguridad social"
+            />
+
+        <RelativeLayout
+            android:id="@+id/scan_rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/camera_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/camera_ic" />
+
+            <TextView
+                android:id="@+id/scan_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_iv"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Escanee su gafete tocando este campo y enfocándolo con la cámara"
+                android:textColor="@color/colorOrange" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dotted_rectangle_orange_drawable" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    
+
+
+</RelativeLayout>

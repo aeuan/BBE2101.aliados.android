@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingStart="10dp">
+
+
+    <ImageView
+        android:id="@+id/comunicado_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPoint" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Hace 3 días"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleStatus" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="El aparador #28 está chueco"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_tv" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, cursus id aliquam nunc leo amet orci, magna et ac, justo litora tortor mollis ligula risus, consectetuer integer vel in nec, tellus suscipit morbi. Purus lobortis pellentesque, etiam erat vel venenatis, wisi et felis elit, aliquet ultricies, ipsum rutrum metus. Nunc eget vehicula nunc non, luctus sodales vivamus sit et malesuada, ac non neque sit, odio adipiscing. Leo fermentum nec duis varius, dui consequat nisl imperdiet a mauris. Amet in sit, sapien sagittis, torquent nascetur accumsan ipsum odio qui, amet dis rhoncus eu fermentum, quis dignissim a arcu velit ornare dapibus. Interdum nibh odio dui, vitae nonummy. Maecenas id placerat a cras bibendum, nec sem tortor neque sit, facilisis hac. Mollis lorem, ac vestibulum commodo ut at vel, at scelerisque, dictum sem eget. Interdum mollis augue, a conubia elit lacus praesent."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv"
+        android:visibility="gone"
+        />
+
+
+    <ImageView
+        android:id="@+id/chat_available"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icono_chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_brand_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/comunicado_iv"
+        app:layout_constraintEnd_toEndOf="@+id/comunicado_iv"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="@+id/comunicado_iv"
+        app:layout_constraintTop_toTopOf="@+id/comunicado_iv"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/tvNumMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_available"
+        app:layout_constraintEnd_toEndOf="@+id/chat_available"
+        app:layout_constraintStart_toStartOf="@+id/chat_available"
+        app:layout_constraintTop_toTopOf="@+id/chat_available" />
+
+    <TextView
+        android:id="@+id/tvPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Puntos : 5"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleStatus"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_status"
+        android:gravity="center"
+        android:text="Pendiente"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/comunicado_iv"
+        app:layout_constraintStart_toStartOf="@+id/comunicado_iv"
+        app:layout_constraintTop_toBottomOf="@+id/comunicado_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

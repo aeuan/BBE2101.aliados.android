@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/comunicado_iv"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,1:1"/>
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Hace 3 días"
+        android:textColor="@color/colorGrayText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comunicado_iv" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="El aparador #28 está chueco"
+        android:textColor="@color/colorGrayText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_tv"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:autoLink="web"
+        android:textColor="@color/colorGrayText"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, cursus id aliquam nunc leo amet orci, magna et ac, justo litora tortor mollis ligula risus, consectetuer integer vel in nec, tellus suscipit morbi. Purus lobortis pellentesque, etiam erat vel venenatis, wisi et felis elit, aliquet ultricies, ipsum rutrum metus. Nunc eget vehicula nunc non, luctus sodales vivamus sit et malesuada, ac non neque sit, odio adipiscing. Leo fermentum nec duis varius, dui consequat nisl imperdiet a mauris. Amet in sit, sapien sagittis, torquent nascetur accumsan ipsum odio qui, amet dis rhoncus eu fermentum, quis dignissim a arcu velit ornare dapibus. Interdum nibh odio dui, vitae nonummy. Maecenas id placerat a cras bibendum, nec sem tortor neque sit, facilisis hac. Mollis lorem, ac vestibulum commodo ut at vel, at scelerisque, dictum sem eget. Interdum mollis augue, a conubia elit lacus praesent."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

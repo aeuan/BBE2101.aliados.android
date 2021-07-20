@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivItem"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@color/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/ivItem"
+        app:layout_constraintLeft_toLeftOf="@id/ivItem"
+        app:layout_constraintRight_toRightOf="@id/ivItem"
+        tools:text="Playera de Zara"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tvStock"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="@dimen/minTextSize"
+        tools:text="200/200"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="@id/ivItem"
+        app:layout_constraintRight_toRightOf="@id/ivItem"
+        app:layout_constraintTop_toBottomOf="@id/ivItem"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvPuntos"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/background_circle_white"
+        app:layout_constraintTop_toTopOf="@id/ivItem"
+        android:layout_marginTop="0dp"
+        android:lineSpacingExtra="1sp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:paddingTop="4dp"
+        app:layout_constraintRight_toRightOf="@+id/ivItem" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCompanyLogo"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        app:layout_constraintTop_toTopOf="@+id/ivItem"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="43dp"
+        android:src="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="@+id/ivItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

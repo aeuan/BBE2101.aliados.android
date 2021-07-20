@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_round_corner">20dp</dimen>
+    <dimen name="textSizeFantasy">14sp</dimen>
+    <dimen name="minTextSize">15sp</dimen>
+</resources>

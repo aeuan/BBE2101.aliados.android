@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <RelativeLayout
+        android:id="@+id/component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddNewOportunity"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Mis Oportunidades"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btAddNewOportunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:minHeight="0dp"
+            android:text="Agregar nuevo +"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/rounded_button_yellow_bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/item_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/component"/>
+
+    <include layout="@layout/error_network_values"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
